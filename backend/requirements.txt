@@ -1,0 +1,14 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+pydantic==2.9.2
+python-dotenv==1.0.1
+faster-whisper==1.0.3
+imageio-ffmpeg==0.5.1
+groq==0.11.0
+openai==1.47.1
+# Pinned: groq 0.11.0 / openai 1.47.1 pass a `proxies` arg to httpx.Client internally,
+# which httpx>=0.28 removed — pinning below avoids "Client.init() got an unexpected
+# keyword argument 'proxies'" at runtime.
+httpx==0.27.2
+reportlab==4.2.2
